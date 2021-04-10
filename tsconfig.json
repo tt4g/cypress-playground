@@ -1,0 +1,38 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./build",
+    "target": "es2016",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2016"
+    ],
+    "types": [
+      "cypress"
+    ],
+    "jsx": "preserve",
+    "charset": "utf8",
+    "allowJs": true,
+    "declaration": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+  },
+  "include": [
+    "./src/**/*",
+    "./cypress/**/*"
+  ],
+  "exclude": []
+}

@@ -1,0 +1,9 @@
+node_node_modules
+bower_components
+
+# Visual Studio Code
+/.history
+/.vscode
+
+# Build directory
+/build
