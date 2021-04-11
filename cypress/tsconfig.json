@@ -1,14 +1,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./build",
-    "target": "es2016",
-    "module": "es2015",
-    "moduleResolution": "node",
+    "target": "es5",
     "lib": [
+      "es5",
       "dom",
-      "es2015",
-      "es2016"
+    ],
+    "types": [
+      "cypress"
     ],
     "jsx": "preserve",
     "charset": "utf8",
@@ -28,10 +27,9 @@
     "strictNullChecks": true,
   },
   "include": [
-    "./src/**/*",
+    "**/*"
   ],
   "exclude": [
-    "node_modules",
-    "./cypress/**/*"
+    "node_modules"
   ]
 }
