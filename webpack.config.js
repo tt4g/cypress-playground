@@ -121,12 +121,7 @@ module.exports = (env, _argv) => {
     module: {
       rules: [
         {
-          test: /\.jsx?$/,
-          include: [sourceRoot],
-          use: [babelLoader],
-        },
-        {
-          test: /\.tsx?$/,
+          test: /\.(js|ts)x?$/,
           include: [sourceRoot],
           use: [babelLoader],
         },

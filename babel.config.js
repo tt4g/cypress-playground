@@ -10,8 +10,8 @@ const babelPresetReact = [
 const babelPresetTypescript = [
   "@babel/preset-typescript",
   {
-    isTSX: true,
-    allExtensions: true,
+    isTSX: false,
+    allExtensions: false,
     allowNamespaces: true,
     allowDeclareFields: true,
     onlyRemoveTypeImports: true, // Only Typescript >= 3.8
