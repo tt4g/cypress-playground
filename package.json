@@ -4,7 +4,7 @@
   "description": "cypress playground",
   "private": true,
   "scripts": {
-    "test": "start-server-and-test 'start:dev-server' http://127.0.0.1:8080/ 'cypress:run'",
+    "test": "start-server-and-test start:dev-server http://127.0.0.1:8080/ cypress:run",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",
     "cypress:open:chrome": "cypress run --browser chrome",
