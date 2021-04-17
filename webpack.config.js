@@ -36,6 +36,7 @@ module.exports = (env, _argv) => {
   const webpackMode = isProduction ? "production" : "development";
   const outputPath = path.resolve(__dirname, "dist/");
   const tsConfigFile = "tsconfig.json";
+  const postcssConfigFile = path.resolve(__dirname, "postcss.config.js");
   const publicPath = "/";
 
   const babelLoader = {
@@ -150,6 +151,15 @@ module.exports = (env, _argv) => {
                   mode: "local",
                   exportLocalsConvention: "asIs",
                   exportOnlyLocals: false,
+                },
+              },
+            },
+            {
+              loader: "postcss-loader",
+              options: {
+                sourceMap: sourceMapEnabled,
+                postcssOptions: {
+                  config: postcssConfigFile,
                 },
               },
             },
