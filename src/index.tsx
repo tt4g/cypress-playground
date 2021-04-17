@@ -1,7 +1,6 @@
-import ReactDOM from "react-dom";
-import styles from "./index.css";
+import "./normalize.css";
 
-ReactDOM.hydrate(
-  <main className={styles.main}>Hello, World!</main>,
-  document.getElementById("root")
-);
+import ReactDOM from "react-dom";
+import { App } from "./App";
+
+ReactDOM.hydrate(<App />, document.getElementById("root"));
