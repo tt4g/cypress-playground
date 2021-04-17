@@ -26,6 +26,8 @@ const babelPluginTransformReactConstantElements = [
   "@babel/plugin-transform-react-constant-elements",
 ];
 
+const babelPluginJsxRemoveDataTestId = ["babel-plugin-jsx-remove-data-test-id"];
+
 /**
  * @type {babel.ConfigFunction}
  */
@@ -39,6 +41,7 @@ module.exports = (api) => {
         plugins: [
           babelPluginTransformRemoveConsole,
           babelPluginTransformReactConstantElements,
+          babelPluginJsxRemoveDataTestId,
         ],
       },
       development: {

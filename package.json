@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "babel-loader": "8.2.2",
+    "babel-plugin-jsx-remove-data-test-id": "^3.0.0",
     "babel-plugin-transform-remove-console": "6.9.4",
     "compression-webpack-plugin": "7.1.2",
     "cross-env": "^7.0.3",

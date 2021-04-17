@@ -14,16 +14,30 @@ const Count: FC = () => {
   const resetCount = useCallback(() => setCount(initialCount), [setCount]);
 
   return (
-    <div className={styles["Cont-container"]}>
-      <p className={styles["Count-count"]}>Count: {count}</p>
+    <div className={styles["Cont-container"]} data-testid="Cont-container">
+      <p className={styles["Count-count"]} data-testid="Count-count">
+        Count: {count}
+      </p>
       <div className={styles["Count-button-group"]}>
-        <button onClick={increment} className={styles["Count-button"]}>
+        <button
+          onClick={increment}
+          className={styles["Count-button"]}
+          data-testid="Count-button-increment"
+        >
           +1
         </button>
-        <button onClick={decrement} className={styles["Count-button"]}>
+        <button
+          onClick={decrement}
+          className={styles["Count-button"]}
+          data-testid="Count-button-decrement"
+        >
           -1
         </button>
-        <button onClick={resetCount} className={styles["Count-button"]}>
+        <button
+          onClick={resetCount}
+          className={styles["Count-button"]}
+          data-testid="Count-button-resetCount"
+        >
           Reset
         </button>
       </div>
