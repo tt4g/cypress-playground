@@ -26,6 +26,15 @@
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "asIs",
+          "customMatcher": ".(c|le|sa|sc)ss$",
+        }
+      }
+    ]
   },
   "include": [
     "./src/**/*",

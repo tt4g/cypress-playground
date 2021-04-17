@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.App {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.Cont-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.Count-count {
+  margin: auto;
+}
+
+.Count-button-group {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 5px;
+}
+
+.Count-button {
+  margin: 0 5px;
+}
