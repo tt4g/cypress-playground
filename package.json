@@ -4,10 +4,10 @@
   "description": "cypress playground",
   "private": true,
   "scripts": {
-    "test": "start-server-and-test start:dev-server http://127.0.0.1:8080/ cypress:run",
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
-    "cypress:open:chrome": "cypress run --browser chrome",
+    "test:local": "start-server-and-test start:dev-server http://127.0.0.1:8080/ cypress:local:run",
+    "cypress:local:run": "cypress run --env configType=local",
+    "cypress:local:open": "cypress open --env configType=local",
+    "cypress:local:open:chrome": "cypress run --browser chrome --env configType=local",
     "start:dev-server": "cross-env NODE_ENV=development webpack serve --env development",
     "format": "eslint --fix ./src && prettier --write ./src",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src"
@@ -42,6 +42,7 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "fork-ts-checker-webpack-plugin": "6.2.1",
+    "fs-extra": "^9.1.0",
     "html-webpack-plugin": "5.3.1",
     "mini-css-extract-plugin": "1.4.1",
     "postcss-flexbugs-fixes": "^5.0.2",

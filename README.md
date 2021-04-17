@@ -8,14 +8,14 @@
 
 Start local application server (webpack-dev-server).
 
-### `npm run cypress:open`
+### `npm run cypress:local:open`
 
 Launch Cypress.
 
-### `npm run cypress:run`
+### `npm run cypress:local:run`
 
 Run Cypress.
 
-### Test
+### `npm run test:local`
 
 Start local application server and run Cypress.
